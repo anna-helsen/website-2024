@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    --border-radius: 100px;
+    --blue: #3F5CA2;
+    --yellow: #E7D000;
+    --darkwhite: #EEEAEA;
+    --lightgrey: #B8C4CC;
+    --mediumgrey: #A4ADB2; 
+    --darkgrey: #3A4449;
+    --coral: #d35353;
+    --pink: #f79fee;
+    --gutter: 3.125vw;
+
+    padding: 0;
+    background: var(--darkwhite);
+    color: #d35353;
+    font-size: 20px;
+    font-family: 'Syne', sans-serif;
+    margin: 2em auto;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+header,
+footer {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+    text-align: center;
+}
+
+aside {
+    border-right: 3px solid #999;
+    grid-area: sidebar;
+    padding-right: 10px;
+    font-size: 0.8em;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+header {
+    grid-area: header;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(116, 233, 81);
+    background-color: antiquewhite;
+    border-color: rgb(231, 231, 120);
+}
+
+.articles {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: inherit;
+}
+
+article {
+    padding: 10px;
+    border: 2px solid rgb(79 185 227);
+    border-radius: 5px;
+}
+
+button {
+    color: rgb(119, 31, 31);
+    background-color: rgb(201, 125, 11);
+}
+
+#bdar {
+    height: 70px;
+    width: auto;
+}
+
+#bdar:hover {
+    background-image: url(images/tilts/bdar-logo-tilt.png);
+    height: 70px;
+    width: auto;
+}
