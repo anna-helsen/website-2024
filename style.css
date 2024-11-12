@@ -1,5 +1,20 @@
-* {
-    box-sizing: border-box;
+@font-face {
+    font-family: "PicNic";
+        src: url(webfonts/PicNic.woff2) format('woff2'),
+            url(webfonts/PicNic.woff) format('woff');
+
+    font-family: "cirruscumulus-webfont";
+        src: url(webfonts/cirruscumulus-webfont.woff2) format('woff2'),
+            url(webfonts/cirruscumulus-webfont.woff) format('woff');
+
+    font-family: "Sligoil";
+        src: url(webfonts/Sligoil-Micro.woff2) format('woff2'),
+            url(webfonts/Sligoil-Micro.woff) format('woff');
+
+    font-family: "Terminal-Grotesque";
+        src: url(webfonts/terminal-grotesque-webfont.eot) format('eot'),
+            url(webfonts/terminal-grotesque-webfont.woff2) format('woff2'),
+            url(webfonts/terminal-grotesque-webfont.woff) format('woff');
 }
 
 body {
@@ -17,44 +32,23 @@ body {
     /*padding: 1em;*/
 }
 
-
-@font-face {
-    font-family: 'PicNic';
-        src: url(webfonts/PicNic.woff);
-        src: url(webfonts/PicNic.woff2);
-
-    font-family: 'bianzhidai-Stitches';
-        src: url(webfonts/bianzhidai-Stitches.woff);
-        src: url(webfonts/bianzhidai-Stitches.otf);
-
-    font-family: 'Sligoil';
-        src: url(webfonts/Sligoil-Micro.woff);
-        src: url(webfonts/Sligoil-Micro.woff2);
-
-    font-family: 'Terminal-Grotesque';
-        src: url(webfonts/terminal-grotesque-webfont.eot);
-        src: url(webfonts/terminal-grotesque-webfont.woff);
-        src: url(webfonts/terminal-grotesque-webfont.woff2);
-}
-
-
 #websiteTitle {
     color: #3F5CA2;
-    font-family: 'bianzhidai-Stitches';
-    font-size: 3.5em;
+    font-family: "cirruscumulus-webfont";
+    font-size: 3.5rem;
 }
 
 #subcaption {
     color: #6586d3;
     font-family: 'Sligoil';
-    font-size: 1em;
+    font-size: 1rem;
     text-align: left;
 }
 
 #navigation {
     color: #6586d3;
     font-family: 'Sligoil';
-    font-size: 1em;
+    font-size: 1rem;
     text-align: right;
     }
 
@@ -62,6 +56,11 @@ body {
     list-style-type: none;
 }
 
+p {
+    font-family: "Sligoil";
+    color: #474747;
+    font-size: 0.75rem;
+}
 
 .container {
     display: grid;
