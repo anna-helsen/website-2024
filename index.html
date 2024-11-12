@@ -4,93 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>&#127804;Helsen&#127804;</title>
-    <style>
-        body {
-            width: 90%;
-            height: 100%;
-            /*max-width: 900px;*/
-            margin: 2em auto;
-            font: .9em/1.2 Arial, Helvetica, sans-serif;
-            background-color: rgb(22, 22, 22); /* very dark grey: rgb(12, 12, 12) // dark grey: rgb(17, 17, 17); // light grey-white: rgb(235, 235, 235); */ 
-            /*background-image: url(images/IMG_1103.JPG);*/
-            background-size:cover;
-            align-content: center;
-            justify-content: center;
-            display: grid;
-            padding: 5em;
-        }
-
-        .container div {
-            border-radius: 5px;
-            padding: 10px;
-            background-color: none;
-            border: none;
-            justify-content: center; 
-            align-items: center;
-            align-content: center;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(auto, 1fr);
-            gap: 5px;
-            justify-content: center; 
-            align-items: center;
-        }
-
-        /*OMG I don't know what was broken, nor what exactly fixed it. But somehow, something made it work! Thanks to Inspector! */ 
-                
-        #A1:hover {
-            transform: rotate(3deg);
-        }
-
-        #A2:hover {
-            transform: rotate(-4deg);
-        }
-
-        #A3:hover {
-            transform: rotate(5deg);
-        }
-
-        #B1:hover {
-            transform: rotate(-2deg);
-        }
-
-        #B2:hover {
-            transform: rotate(-6deg);
-        }
-
-        #B3:hover {
-            transform: rotate(8deg);
-        }
-
-        #C1:hover {
-            transform: rotate(7deg);
-        }
-
-        #C2:hover {
-            transform: rotate(8deg);
-        }
-
-        #mechanisms {
-            display: grid;
-            justify-content: center; 
-            align-self: center;
-            align-content: center;
-            align-items: center;
-        }
-
-        #C3:hover {
-            transform: rotate(-5deg);
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-
-
 <body>
+
+    <header>
+        <div id="websiteTitle">
+            <h1>Anna-Lina Helsen</h1>
+        </div>
+
+        <!-- <div id="subcaption">
+            <h3>Multimedia Maker</h3>
+        </div> -->
+
+        <div id="navigation">
+            <h2>
+                <ul>
+                    <li>Installation</li>
+                    <li>Moving Image and Projections</li>
+                    <li>Sound Art</li>
+                </ul>
+            </h2>
+        </div>
+    </header>
 
     <div class="container">
 
@@ -147,15 +84,22 @@
                 <img src='images/thumbnails-392x392/Circular-star.jpg' onmouseover="this.src='images/thumbnails-392x392/Circular-plain.jpg';" onmouseout="this.src='images/thumbnails-392x392/Circular-star.jpg';"/>
             </a>
         </div>
-        
-
+       
     </div>
 
-    <div style="padding:60% 0 0 0;position:relative;">
-        <iframe src="https://player.vimeo.com/video/1026931178?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Showreel 2024">
-        </iframe>
+    <div id="container2" class="showreel">
+        <a href="https://vimeo.com/1026931178?share=copy">
+            <picture>
+                <source media="(max-width: 799px)" srcset="images/Showreel-Thumbnail-400w.jpg" />
+                <source media="(min-width: 800px)" srcset="images/Showreel-Thumbnail-800w.jpg" />
+                <img src="images/Showreel-Thumbnail-800w.jpg" alt="Image of a colourfull room, as a link to Showreel on Vimeo" />
+            </picture>
+        </a>
     </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
+      
+    
+ 
+  
 
 </body>
 
