@@ -4,12 +4,12 @@
             url(webfonts/PicNic.woff) format('woff');
 
     font-family: "cirruscumulus-webfont";
-        src: url(webfonts/cirruscumulus-webfont.woff2) format('woff2'),
-            url(webfonts/cirruscumulus-webfont.woff) format('woff');
+        src: url(cirruscumulus-webfont.woff2) format('woff2'),
+            url(cirruscumulus-webfont.woff) format('woff');
 
     font-family: "Sligoil";
-        src: url(webfonts/Sligoil-Micro.woff2) format('woff2'),
-            url(webfonts/Sligoil-Micro.woff) format('woff');
+        src: url(Sligoil-Micro.woff2) format('woff2'),
+            url(Sligoil-Micro.woff) format('woff');
 
     font-family: "Terminal-Grotesque";
         src: url(webfonts/terminal-grotesque-webfont.eot) format('eot'),
@@ -34,7 +34,7 @@ body {
 
 #websiteTitle {
     color: #3F5CA2;
-    font-family: "cirruscumulus-webfont";
+    font-family: "cirruscumulus-webfont", "PicNic";
     font-size: 3.5rem;
 }
 
@@ -92,12 +92,23 @@ p {
     align-content: center;
 }
 
-.showreel {
+#container3 {
+    /*border-radius: 15px;
+    padding: 20px;
+    border: none;
     justify-content: center; 
     align-items: center;
-    align-content: center;
+    align-content: center;*/
+}
+
+.showreel {
     text-align: center;
     margin: 2em;
+}
+
+.animationAnna {
+    text-align: center;
+    margin: 5em;
 }
 
 aside {
