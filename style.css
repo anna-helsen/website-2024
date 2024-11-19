@@ -19,6 +19,31 @@
       "ROND" 0;
   }
 
+  .space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
 body {
     margin: 0.5em auto;
     font: 16px Arial, Helvetica, sans-serif;
@@ -34,14 +59,16 @@ body {
     color: #71f360;
     font-family: "Doto";
     font-size: 300%;
-    text-align: ;
+    text-align: center;
 }
 
 #ProjectTitle {
     color: #71f360;
-    font-family: "Syne Mono";
-    font-size: 200%;
-    text-align: ;
+    font-family: "Space Mono", monospace;
+    font-style: italic;
+    font-size: 150%;
+    text-align: left;
+    padding: 2%;
 }
 
 
