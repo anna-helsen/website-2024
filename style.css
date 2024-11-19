@@ -1,65 +1,114 @@
-@font-face {
-    font-family: "PicNic";
-        src: url(webfonts/PicNic.woff2) format('woff2'),
-            url(webfonts/PicNic.woff) format('woff');
+.dongle-regular {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-    font-family: "cirruscumulus-webfont";
-        src: url(cirruscumulus-webfont.woff2) format('woff2'),
-            url(cirruscumulus-webfont.woff) format('woff');
-
-    font-family: "Sligoil";
-        src: url(Sligoil-Micro.woff2) format('woff2'),
-            url(Sligoil-Micro.woff) format('woff');
-
-    font-family: "Terminal-Grotesque";
-        src: url(webfonts/terminal-grotesque-webfont.eot) format('eot'),
-            url(webfonts/terminal-grotesque-webfont.woff2) format('woff2'),
-            url(webfonts/terminal-grotesque-webfont.woff) format('woff');
-}
+.syne-mono-regular {
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.doto {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+  }
 
 body {
-    width: 95%;
-    height: 100%;
-    /*max-width: 900px;*/
     margin: 0.5em auto;
-    font: .9em/1.2 Arial, Helvetica, sans-serif;
-    background-color: rgb(22, 22, 22); /* very dark grey: rgb(12, 12, 12) // dark grey: rgb(17, 17, 17); // light grey-white: rgb(235, 235, 235); */ 
-    /*background-image: url(images/IMG_1103.JPG);*/
+    font: 16px Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0); /* current: rgb(22, 22, 22); / very dark grey: rgb(12, 12, 12) // dark grey: rgb(17, 17, 17); // light grey-white: rgb(235, 235, 235); / Nice red: (180, 57, 57)  */ 
     background-size:cover;
     align-content: center;
     justify-content: center;
     display: grid;
-    /*padding: 1em;*/
+    max-width: 80%;
 }
 
-#websiteTitle {
-    color: #3F5CA2;
-    font-family: "cirruscumulus-webfont", "PicNic";
-    font-size: 3.5rem;
+#Title {
+    color: #71f360;
+    font-family: "Doto";
+    font-size: 300%;
+    text-align: ;
 }
+
+#ProjectTitle {
+    color: #71f360;
+    font-family: "Syne Mono";
+    font-size: 200%;
+    text-align: ;
+}
+
 
 #subcaption {
     color: #6586d3;
-    font-family: 'Sligoil';
-    font-size: 1rem;
+    font-family: 'Dongle';
+    font-size: smaller;
     text-align: left;
 }
 
 #navigation {
-    color: #6586d3;
-    font-family: 'Sligoil';
-    font-size: 1rem;
+    color: #e7e7e7; /* #d8e2fc; /* rgb(65, 219, 86); */
+    /*position: fixed;
+    top: 0;
+    right: 0;
+    margin: 15%;*/ 
     text-align: right;
-    }
+}
 
 #navigation ul {
     list-style-type: none;
+    font-family: 'Dongle';
+    font-size: 25px;
+    line-height: 22px;
+    padding:0px;
+    margin:0px;
 }
 
 p {
-    font-family: "Sligoil";
-    color: #474747;
-    font-size: 0.75rem;
+    font-family: 'Dongle';
+    color: #e7e7e7;
+    font-size: 25px;
+    line-height: 14px;
+    padding:0px;
+    margin:0px;
+}
+
+p a {
+    font-family: 'Dongle';
+    color: #e7e7e7;
+    font-size: 25px;
+    line-height: 14px;
+    padding:0px;
+    margin:0px;
+}
+
+a {
+    color: #e7e7e7;
+    font-size: 25px;
+    line-height: 14px;
+    padding:0px;
+    margin:0px;
+    text-decoration: none;
+}
+
+
+.introduction p {
+    width: 50vw;
+    height: auto;
+    font-family: 'Dongle';
+    font-size: 35px;
+    line-height: 22px;
+    padding:0px;
+    margin:0px;
+    color: #e7e7e7; /*#3064dd; */ 
+    /*background-color: rgb(245, 245, 245);*/
+    padding: 1%;
 }
 
 .container {
@@ -70,7 +119,6 @@ p {
     justify-content: center; 
     align-items: center;
 }
-
 
 .container div {
     border-radius: 5px;
@@ -92,39 +140,28 @@ p {
     align-content: center;
 }
 
-#container3 {
-    /*border-radius: 15px;
-    padding: 20px;
-    border: none;
-    justify-content: center; 
-    align-items: center;
-    align-content: center;*/
-}
-
 .showreel {
     text-align: center;
     margin: 2em;
 }
 
-.animationAnna {
+#container3 {
+    height: 20px;
+    width: auto;
+    align-items: center;
     text-align: center;
-    margin: 5em;
+}
+
+img #animationAnna {
+    height: 500px;
+    width: auto;
 }
 
 aside {
     border-right: 3px solid #999;
     grid-area: sidebar;
     padding-right: 10px;
-    font-size: 0.8em;
-}
-
-header,
-footer {
-    /*border-radius: 5px;
-    padding: 1px;
-    background-color: rgb(207, 232, 220);
-    border: 2px solid rgb(79, 185, 227);
-    text-align: center;*/
+    font-size: smaller;
 }
 
 /*footer {
@@ -155,15 +192,15 @@ article {
 button {
     color: rgb(119, 31, 31);
     background-color: rgb(201, 125, 11);
-}*/
+}
 
-/*h1 {
+h1 {
     color: #3F5CA2;
     font-family: 'PicNic';
     font-size: 5em;
-}*/
+}
 
-/*#A1:hover {
+#A1:hover {
     transform: rotate(3deg);
 }
 
