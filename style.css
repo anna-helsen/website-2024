@@ -1,3 +1,7 @@
+
+
+/* FONT FONT FONT */ 
+
 .dongle-regular {
     font-family: "Dongle", sans-serif;
     font-weight: 400;
@@ -43,6 +47,18 @@
     font-style: italic;
   }
   
+/* PAGE */ 
+
+
+header {
+    /*grid-area: header;*/
+    font-size: 100%;
+    color: rgb(116, 233, 81);
+    background-color: rgb(207, 154, 214);
+    border-color: rgb(231, 231, 120);
+    border-width: 10px;
+    width: 100%;
+}
 
 body {
     margin: 0.5em auto;
@@ -51,15 +67,16 @@ body {
     background-size:cover;
     align-content: center;
     justify-content: center;
-    display: grid;
-    max-width: 80%;
+    /*display: grid;*/
+    /*max-width: 80%;*/
 }
 
 #Title {
-    color: #71f360;
+    color: #000000; /* #71f360; */ 
     font-family: "Doto";
     font-size: 300%;
-    text-align: center;
+    text-align: left;
+    padding: 0% 0% 2% 2%;
 }
 
 #ProjectTitle {
@@ -71,21 +88,10 @@ body {
     padding: 2%;
 }
 
-
-#subcaption {
-    color: #6586d3;
-    font-family: 'Dongle';
-    font-size: smaller;
-    text-align: left;
-}
-
 #navigation {
-    color: #e7e7e7; /* #d8e2fc; /* rgb(65, 219, 86); */
-    /*position: fixed;
-    top: 0;
-    right: 0;
-    margin: 15%;*/ 
+    color: #000000; /* #d8e2fc; /* rgb(65, 219, 86); */
     text-align: right;
+    padding: 0% 2% 1% 0%;
 }
 
 #navigation ul {
@@ -95,6 +101,13 @@ body {
     line-height: 22px;
     padding:0px;
     margin:0px;
+}
+
+#subcaption {
+    color: #6586d3;
+    font-family: 'Dongle';
+    font-size: smaller;
+    text-align: left;
 }
 
 p {
@@ -131,12 +144,15 @@ a {
     font-family: 'Dongle';
     font-size: 35px;
     line-height: 22px;
-    padding:0px;
-    margin:0px;
+    word-wrap: break-word;
     color: #e7e7e7; /*#3064dd; */ 
     /*background-color: rgb(245, 245, 245);*/
-    padding: 1%;
+    margin:0px;
+    padding: 2% 0% 2% 5%;
 }
+
+
+/* CONTAINER FOR IMAGE TILES */ 
 
 .container {
     display: grid;
@@ -145,6 +161,9 @@ a {
     gap: 5px;
     justify-content: center; 
     align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
 }
 
 .container div {
@@ -157,7 +176,12 @@ a {
     align-content: center;
 }
 
+/* CONTAINER FOR SHOW REEL */ 
+
 #container2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
     border-radius: 5px;
     padding: 10px;
     /*background-color: blue;*/
@@ -172,6 +196,21 @@ a {
     margin: 2em;
 }
 
+#Showreel {
+    /*width: 50%;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 5px;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* CONTAINER FOR FOOTER */ 
+
 #container3 {
     height: 20px;
     width: auto;
@@ -183,6 +222,34 @@ img #animationAnna {
     height: 500px;
     width: auto;
 }
+
+
+
+/* PROJECT DESCRIPTIONS AND PAGES  */ 
+
+
+.PROJbox {
+    color: aqua;
+}
+
+.PROJbox p {
+    color: rgb(201, 230, 35);
+}
+
+.PROJbox p .PROJinfo {
+    color: rgb(255, 0, 242);
+}
+
+.PROJinfo {
+    color: antiquewhite;
+}
+
+
+
+
+
+
+/* OTHER AND OLDER THINGS */ 
 
 aside {
     border-right: 3px solid #999;
@@ -263,17 +330,57 @@ h1 {
     transform: rotate(-5deg);
 }*/
 
-#Showreel {
-    /*width: 50%;
-    justify-content: center; 
-    align-items: center;
-    align-content: center;*/
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    gap: 5px;
-    justify-content: center; 
-    align-items: center;
+
+
+
+
+/* RESPONSIVE DESIGN TO BE DONE HERE! */ 
+
+
+@media screen and (min-width:1080px) {
+    body {
+      background-color:rgb(22, 22, 22);
+    }
+}
+
+@media screen and (max-width:1080px) {
+    body {
+      background-color:rgb(243, 131, 131);
+    }
+}
+
+@media (max-width: 900px) { /* Replace with 360 or whatever you intend to */
+    .grid-container.grid-container { /* You can also use a parent for specificity */
+        grid-template-columns: 1fr; /* One column */
+        grid-template-rows: repeat(auto,1fr); /* Five rows "5,1fr"*/
+        grid-template-areas: "Photo" /* Stacked areas */
+                             "Intro" 
+                             "Container"
+                             "Container2"
+                             "Container3"
+                             "Left"
+                             "Right"
+                             "Footer";
+    }
+}
+
+@media screen and (max-width:760px) {
+    body {
+      background-color: #9063e4;
+    }
+}
+  
+@media screen and (max-width:480px) {
+    body {
+      background-color: rgb(34, 34, 34); 
+    }
+}
+  
+@media screen and (max-width:360px) {
+    body {
+      background-color: #5aafd3; 
+    }
 }
 
 
+  
