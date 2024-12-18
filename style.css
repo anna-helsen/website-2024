@@ -54,7 +54,7 @@ header {
     /*grid-area: header;*/
     font-size: 100%;
     color: rgb(116, 233, 81);
-    background-color: rgb(207, 154, 214);
+    background-color: rgb(0, 0, 0); /* rgb(117, 112, 112); */
     border-color: rgb(231, 231, 120);
     border-width: 10px;
     width: 100%;
@@ -72,11 +72,11 @@ body {
 }
 
 #Title {
-    color: #000000; /* #71f360; */ 
+    color: #93f782; /* #71f360; */ 
     font-family: "Doto";
     font-size: 300%;
     text-align: left;
-    padding: 0% 0% 2% 2%;
+    padding: 0% 0% 1% 5%;
 }
 
 #ProjectTitle {
@@ -89,16 +89,26 @@ body {
 }
 
 #navigation {
-    color: #000000; /* #d8e2fc; /* rgb(65, 219, 86); */
+    color: #d6ef85; /* #d8e2fc; /* rgb(65, 219, 86); */
     text-align: right;
-    padding: 0% 2% 1% 0%;
+    padding: 0% 5% 2% 0%;
 }
 
 #navigation ul {
     list-style-type: none;
     font-family: 'Dongle';
-    font-size: 25px;
+    font-size: 35px;
     line-height: 22px;
+    padding:0px;
+    margin:0px;
+}
+
+#navigation ul a {
+    list-style-type: none;
+    font-family: 'Dongle';
+    font-size: 35px;
+    line-height: 40px;
+    color: #8a85ef; 
     padding:0px;
     margin:0px;
 }
@@ -121,8 +131,17 @@ p {
 
 p a {
     font-family: 'Dongle';
-    color: #e7e7e7;
-    font-size: 25px;
+    color: #3f27c9;
+    font-size: 5px;
+    line-height: 14px;
+    padding:0px;
+    margin:0px;
+}
+
+h5 {
+    font-family: 'Dongle';
+    color: #8d0fee;
+    font-size: 15px;
     line-height: 14px;
     padding:0px;
     margin:0px;
@@ -175,6 +194,57 @@ a {
     align-items: center;
     align-content: center;
 }
+
+.containerM {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 5px;
+    justify-content: center; 
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+
+.containerM #A1 {
+    width: 25% auto;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: none;
+    border: none;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+}
+
+.containerM #A2 {
+    width: 25% auto;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: none;
+    border: none;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+}
+
+.containerM #A3 {
+    width: 25% auto;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: none;
+    border: none;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+}
+
+
 
 /* CONTAINER FOR SHOW REEL */ 
 
@@ -383,4 +453,3 @@ h1 {
 }
 
 
-  
